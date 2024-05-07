@@ -4,6 +4,7 @@ get("/", { :controller => "users", :action => "index"})
 get("/users" , { :controller => "users", :action => "index"})
 get("/users/:username" , { :controller => "users", :action => "show"})
 post("/add_user" , { :controller => "users", :action => "create"})
+post("/update_user/:id" , { :controller => "users", :action => "update"})
 
 get("/photos" , { :controller => "photos", :action => "index"})
 get("/photos/:id" , { :controller => "photos", :action => "show"})
