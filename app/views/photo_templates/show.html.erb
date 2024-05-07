@@ -76,15 +76,15 @@
   <% @the_photo.comments.each do |a_comment|%>
   <tr>
     <td>
-      anisa
+      <%= a_comment.commenter.username %>
     </td>
 
     <td>
-      TEST TEST
+      <%= a_comment.body %>
     </td>
 
     <td>
-      2024-05-07 01:37:59 UTC
+      <%= a_comment.created_at %>
     </td>
   </tr>
   <% end %>
