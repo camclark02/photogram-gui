@@ -40,6 +40,7 @@ class PhotosController < ApplicationController
 
     redirect_to("/photos/" + a_new_photo.id.to_s)
   end
+  
   def update
     the_id = params.fetch("modify_id")
 
